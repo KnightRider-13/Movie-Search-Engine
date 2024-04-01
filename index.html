@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/logo-transparent-svg.svg" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js" defer></script>
+    <title>Open Movie Database</title>
+  </head>
+  <body>
+    <section id="landing-page">
+      <nav>
+        <figure>
+          <img src="./assets/logo-transparent-svg.svg" id="company-logo" />
+        </figure>
+        <ul class="nav__link--list">
+          <liv class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor secondary link__hover-effect link__hover-effect--secondary"
+              >Home</a
+            >
+          </liv>
+          <liv class="nav__link" onclick="contact()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              onclick="movieTextBox()"
+              >Find your movie</a
+            >
+          </liv>
+          <liv class="nav__link">
+            <button class="nav__link--button" onclick="contact()">Contact</button>
+          </liv>
+        </ul>
+      </nav>
+      <header id="landing-page">
+        <div class="container">
+          <div class="row">
+            <div class="header__container">
+              <h1 class="header__title">Open Movie Database</h1>
+              <h3 class="header__sub-title">
+                Curtain Up on Cinema Search with
+                <span class="secondary">OMD</span>
+              </h3>
+              <form onsubmit="movieSearch(event)">
+                <input
+                  type="text"
+                  class="header__input"
+                  placeholder="Movie Name or Keyword"
+                />
+                <button class="header__button" onclick="toggleMoviesLoading()">
+                  <i class="fa fa-search"></i>
+                  <i class="fa fa-spinner movies__loading--spinner"></i>
+                </button>
+              </form>
+              <figure class="header__img--wrapper">
+                <img src="./assets/12713.jpg" class="header__img" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <section id="movies">
+        <div class="container">
+            <div class="row">
+              <div class="movies__results--container">
+              <h3 class="movies__header">Search Results for: <span class="secondary movie__keyword"></span></h3>
+              <select id="filter" onchange="filterMovies(event)">
+                <option value="" disabled selected>Filter:</option>
+                <option value="NEW_TO_OLD">Recent</option>
+                <option value="OLD_TO_NEW">Old</option>
+              </select>
+            </div>
+                <div class="movies__container">
+                    <div class="movies">
+                        <figure class="movies__img-wrapper">
+                            <img src="" alt="" class="movies__img">
+                        </figure>
+                        <h3 class="movie__title"></h3>
+                        <h4 class="movie__year"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__container">
+            <figure>
+              <img
+                src="./assets/logo-transparent-svg.svg"
+                class="footer__logo"
+              />
+            </figure>
+            <div class="footer__links">
+              <a
+                href="#"
+                class="footer__link link__hover-effect link__hover-effect--black"
+                >Home</a
+              >
+              <a
+                href="#movies"
+                class="footer__link link__hover-effect link__hover-effect--black"
+                >Movies</a
+              >
+              <a
+                href="#" onclick="contact()"
+                class="footer__link link__hover-effect link__hover-effect--black"
+                >Contact</a
+              >
+            </div>
+            <div class="footer__copyright">
+              Copyright © 2023 Open Movie Database
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
