@@ -8,7 +8,6 @@ This project is a Movie Search Application built using vanilla JavaScript. It le
 
 - [Description📝](#description)
 - [Features✨](#features)
-- [How It Works✨](#how-it-works)
 - [Screenshots 📸](#screenshots)
 - [Code Highlights🔍](#code-highlights)
 - [Installation🛠️](#installation)
@@ -24,13 +23,6 @@ This project is a Movie Search Application built using vanilla JavaScript. It le
 - Dynamic Movie Rendering: Displays movie results dynamically with their poster, title, and release year.
 - Sorting Options: Filter movies by release date (Newest to Oldest or vice versa).
 - User Alerts: Displays an alert for unavailable features (e.g., contact function).
-
-## How It Works
-
-- Home Page: Displays all blog posts and options to edit or delete.
-- Add Post: Submit a title and content to create a new post.
-- Edit Post: Update the title or content of an existing post.
-- Delete Post: Remove a post from the list
 
 ## Screenshots
 
