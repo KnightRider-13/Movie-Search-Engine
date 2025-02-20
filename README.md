@@ -75,7 +75,7 @@ function filteringMovies(movies, filter){
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/movie-search-app.git
+git clone https://github.com/KnightRider-13/Movie-Search-Engine.git
 ```
 ### 2. Open the index.html file in your browser.
 
